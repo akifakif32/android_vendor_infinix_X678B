@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X678B
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X678B/proprietary/system/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/infinix/X678B/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/infinix/X678B/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X678B/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
@@ -388,6 +389,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X678B/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libshowlogo \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
     VP9SecureVdecCA_510 \
@@ -1329,6 +1331,7 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    kpoc_charger \
     ccci_mdinit \
     ccci_rpcd \
     fuelgauged \
